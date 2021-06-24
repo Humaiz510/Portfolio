@@ -13,8 +13,8 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-light: #303030;
+    --clr-dark: #fff;
     --clr-accent: #f8333c;
     
     --fs-h1: 3rem;
@@ -109,6 +109,11 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-reg);
 }
 
+.section__title--about {
+    color: var(--clr-accent);
+    position: relative;
+}
+
 .section__title--intro strong {
     display: block;
 }
@@ -143,7 +148,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .nav {
@@ -323,6 +328,7 @@ header {
 }
 
 .service {
+    color: var(--clr-dark);
     max-width: 500px;
     margin: 0 auto;
 }
@@ -348,6 +354,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    margin-top: 10px;
 }
 
 @media (min-width: 600px) {
@@ -402,8 +409,8 @@ header {
 
 .portfolio__img {
     transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+        transform 300ms cubic-bezier(1,.97,0,.15),
+        opacity 350ms linear;
 }
 
 .portfolio__item:focus {
