@@ -413,6 +413,11 @@ header {
         opacity 350ms linear;
 }
 
+.exe_item {
+    position: relative;
+}
+
+
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
