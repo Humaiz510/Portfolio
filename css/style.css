@@ -414,11 +414,11 @@ header {
 }
 
 .exe_link {
-    color:black;
+    color:white;
     padding:1em;
     text-align: center;
     display:inline-block;
-    text-decoration: none !important;
+    text-decoration: underline !important;
     margin:0 auto;
 
     -webkit-transition: all 0.2s ease-in-out;
