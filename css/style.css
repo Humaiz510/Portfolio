@@ -419,7 +419,7 @@ header {
     text-align: center;
     display:inline-block;
     text-decoration: underline !important;
-    margin:0 auto;
+    margin:10 auto;
 
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
