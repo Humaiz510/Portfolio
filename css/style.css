@@ -413,7 +413,8 @@ header {
         opacity 350ms linear;
 }
 
-.exe_item {
+.exe_link {
+    color:black;
     padding:1em;
     text-align: center;
     display:inline-block;
