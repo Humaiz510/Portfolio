@@ -1,1 +1,1 @@
-humaizakbar.com
+www.humaizakbar.com
