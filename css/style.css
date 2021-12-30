@@ -411,6 +411,7 @@ header {
     transition: 
         transform 300ms cubic-bezier(1,.97,0,.15),
         opacity 350ms linear;
+        size: 300px;
 }
 
 .exe_link {
