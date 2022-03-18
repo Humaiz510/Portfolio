@@ -58,6 +58,10 @@ section {
     padding: 5em 2em;
 }
 
+p {
+    color: #303030
+}
+
 img {
     display: block;
     max-width: 100%;
