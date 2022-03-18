@@ -78,6 +78,7 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 .Paragraph-Flex {
     display: Flex;
+    color: #ffffff
 }
 .btn {
     display: inline-block;
