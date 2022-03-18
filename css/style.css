@@ -375,11 +375,6 @@ header {
     margin-top: 10px;
 }
 
-.about-me__imgg {
-    box-shadow: var(--qs);
-    margin-top: 10px;
-}
-
 @media (min-width: 600px) {
     .about-me {
         display: grid;
