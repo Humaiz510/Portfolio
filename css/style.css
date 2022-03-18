@@ -327,7 +327,7 @@ header {
     color: #fffff;
 }
 .section__subtitle--services{
-    color: var(#ffffff);
+    color: #ffffff;
     position: relative;
 }
 .section__title--services::after {
