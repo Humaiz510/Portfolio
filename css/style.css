@@ -16,6 +16,7 @@
     --clr-light: #303030;
     --clr-dark: #fff;
     --clr-accent: #FFFFFF;
+    --clr-accent2: #303030;
     --clr-accenttt: #f8333c;
     
     --fs-h1: 3rem;
@@ -322,6 +323,9 @@ header {
     position: relative;
 }
 
+.section__pcolor{
+    color: #fffff;
+}
 .section__subtitle--services{
     color: var(#ffffff);
     position: relative;
