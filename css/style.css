@@ -15,7 +15,7 @@
     
     --clr-light: #303030;
     --clr-dark: #fff;
-    --clr-accent: #FFFFFF;
+    --clr-accent: #FFFF;
     --clr-accent2: #303030;
     --clr-accenttt: #f8333c;
     
@@ -63,12 +63,18 @@ p {
     color: #303030
 }
 
+.pcolor{
+    color: #ffffff
+}
+
 img {
     display: block;
     max-width: 100%;
 }
 
 strong { font-weight: var(--fw-bold) }
+
+
 
 :focus {
     outline: 3px solid var(--clr-accent);
@@ -78,7 +84,10 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 .Paragraph-Flex {
     display: Flex;
-    color: #ffffff
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 50%;
 }
 .btn {
     display: inline-block;
@@ -114,6 +123,8 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .25em;
+    margin: auto;
+    width: 100%;
 }
 
 .section__title--intro {
@@ -123,6 +134,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title--about {
     color: var(--clr-accent);
     position: relative;
+    max-width: 800px;
 }
 
 .section__title--intro strong {
@@ -134,12 +146,22 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
+.section__subtitle--intro{
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
 }
 
 .section__subtitle--work {
@@ -325,7 +347,7 @@ header {
 }
 
 .section__pcolor{
-    color: #fffff;
+    color: #FFFFF;
 }
 .section__subtitle--services{
     color: #ffffff;
@@ -375,37 +397,7 @@ header {
     margin-top: 10px;
 }
 
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
+
 
 /* My Work */
 
@@ -421,7 +413,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-accent2);
     overflow: hidden;
 }
 
@@ -524,3 +516,35 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.circle{
+    animation:rotate 10s infinite;
+     display: inline-block;
+     width:120px;
+     height:120px;
+   }
+   circle:before{
+     content:'';
+     position:absolute;
+     width:40px;
+     height:40px;
+     border:40px solid transparent;
+     border-top-color:white;
+     border-right-color:white;
+     transform:rotate(45deg);
+     border-radius:50%;
+     
+   }
+   
+   circle:after{
+   content:'';
+     position:absolute;
+     width:40px;
+     height:40px;
+     border:40px solid transparent;
+     border-bottom-color:black;
+     border-left-color:black;
+     transform:rotate(45deg);
+     border-radius:50%;
+   }
