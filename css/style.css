@@ -413,7 +413,6 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent2);
     overflow: hidden;
 }
 
