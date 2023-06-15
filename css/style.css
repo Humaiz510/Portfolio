@@ -296,6 +296,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    height: 250px;
 }
 
 .section__subtitle--intro {
@@ -351,7 +352,7 @@ header {
 }
 
 .section__pcolor{
-    color: #FFFFF;
+    color: #ffffff;
 }
 .section__subtitle--services{
     color: #ffffff;
