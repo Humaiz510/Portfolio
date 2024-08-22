@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Off-Channel Communications</title>
+    <title>Off-Channel Communications FAQ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Off-Channel Communications FAQ</h1>
-        
-        <!-- Clickable Section -->
-        <button id="toggleSection" class="section-toggle">Off-Channel vs On-Channel Communication Modes</button>
-        
-        <div id="listSection" class="hidden-section">
-            <div class="list-section">
-                <div class="list-item">
-                    <h2>Off-Channel Communication</h2>
-                    <ul>
-                        <li>Personal Email</li>
-                        <li>WhatsApp</li>
-                        <li>Signal</li>
-                        <li>Facebook Messenger</li>
-                        <li>Private Discord Channels</li>
-                    </ul>
+
+        <!-- Search input for FAQ -->
+        <input type="text" id="searchInput" onkeyup="searchFAQ()" placeholder="Search for a question...">
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">What is off-channel communication?</button>
+                <div class="faq-answer">
+                    Off-channel communication refers to communication that occurs outside the normal or approved channels, such as personal email, messaging apps, or unapproved platforms.
                 </div>
-                <div class="list-item">
-                    <h2>On-Channel Communication</h2>
-                    <ul>
-                        <li>Corporate Email</li>
-                        <li>Microsoft Teams</li>
-                        <li>Slack (Monitored Channels)</li>
-                        <li>Zoom (Official Corporate Account)</li>
-                        <li>Salesforce Chatter</li>
-                    </ul>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Why is off-channel communication a security risk?</button>
+                <div class="faq-answer">
+                    Off-channel communication can lead to security risks like data breaches, unauthorized access to sensitive information, and lack of proper monitoring.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can off-channel communication be detected?</button>
+                <div class="faq-answer">
+                    Detection methods include monitoring network traffic, implementing DLP (Data Loss Prevention) solutions, and using tools designed to detect unauthorized communication.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What are best practices to prevent off-channel communication?</button>
+                <div class="faq-answer">
+                    Best practices include enforcing communication policies, educating employees, using secure communication tools, and monitoring for unauthorized activities.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Off-Channel vs On-Channel Communication Modes</button>
+                <div class="faq-answer">
+                    <div class="list-section">
+                        <div class="list-item">
+                            <h3>Off-Channel Communication</h3>
+                            <ul>
+                                <li>Personal Email</li>
+                                <li>WhatsApp</li>
+                                <li>Signal</li>
+                                <li>Facebook Messenger</li>
+                                <li>Private Discord Channels</li>
+                            </ul>
+                        </div>
+                        <div class="list-item">
+                            <h3>On-Channel Communication</h3>
+                            <ul>
+                                <li>Corporate Email</li>
+                                <li>Microsoft Teams</li>
+                                <li>Slack (Monitored Channels)</li>
+                                <li>Zoom (Official Corporate Account)</li>
+                                <li>Salesforce Chatter</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
