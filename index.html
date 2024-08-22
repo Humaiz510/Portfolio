@@ -1,193 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Humaiz Akbar's Portfolio Website</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awsome/5.11.2/css/all.css"
-		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVk/Kvc=" crossorigin="anonymous"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Channel Communications FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Off-Channel Communications FAQ</h1>
 
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- Search input for FAQ -->
+        <input type="text" id="searchInput" onkeyup="searchFAQ()" placeholder="Search for a question...">
 
-		<link rel="stylesheet" href="css/style.css">
-
-		<script src="https://kit.fontawesome.com/78577e345e.js" crossorigin="anonymous"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-
-	</head>
-
-	<body>
-		<header>
-			<div class="logo">
-				<a href="index.html" class="portfolio__item">
-				<!---<img src="img/circleGif.gif" class="portfolio__img" alt=""></a>-->
-				<img src="img/PortfolioLogo.png" class="portfolio__img" alt=""></a>
-			</div>
-			<div class="circle">
-				
-			</div>
-			<!--<button class="nav-toggle" aria-label="toggle navigation">
-				<span class="hamburger"></span>
-			</button>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-					<li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-				</ul>
-			</nav>!-->
-		</header>
-
-		<!-- Introduction -->
-		<section class="intro" id="home">
-			<h1 class="section__title section__title--intro">
-				Hi, I am <strong>Humaiz Akbar</strong>
-			</h1>
-			<p class="section__subtitle section__subtitle--intro">Developer</p>
-			<img src="MeSmiling.png" alt="a picture of humaiz akbar" class="intro__img">
-		</section>
-
-		<!-- My services -->
-		<!--<section class="my-services" id="services">
-			<h2 class="section__title section__title--services">What I do</h2>
-			<div class="services">
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p></p>
-                </div>  / service
-				
-                <div class="service">
-                    <h3>    </h3>
-                    <p>     </p>
-                </div>  / service
-				
-                <div class="service">
-                    <h3>Mobile App Development</h3>
-                    <p></p>
-                </div>  / service !-->
-                
-            </div> <!-- / services -->
-<!--
-			<a href="#work" class="btn">My work</a>
-		</section>-->
-		<!-- About Me -->
-		<seciton class="about-me" id="about">
-				<h2 class="section__title section__title--about">Who I am</h2>
-				<p class ="section__subtitle section__subtitle--about">Software Engineer Based Out Of PA</p>
-
-				<div class="about-me__body">
-					<p class='Paragraph-Flex section__pcolor'>I am currently a junior studying at the Drexel University in Philadelphia, PA. I am majoring in Software Engineering. I dream of becoming a professional develolper and someone who can help people with his work in some way.</p><p> </p><p> </p><p></p>
-               		<!--<p>A little about my background. I am fluent in multiple languages that include Urdu, Punjabi, Hindi, and English. I love to create and learn as much as I can.</p>
-				!--></div>
-
-				<!--<img src="" alt=" " class = "about-me__img">!-->
-		</seciton>
-
-		<!-- My Work -->
-		<section class="my-services" id="work">
-			<h2 class="section__title section__title--services">My work</h2>
-			<!--<p class="section__subtitle section__subtitle--services section__pcolor">A selection of my range of work</p>!-->
-
-			
-			<div class="portfolio" id="portfolioItems">
-                <!-- Portfolio item 01 -->
-				<a href="DiscordBot/" class="portfolio__item">
-                    <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="" class="portfolio__img">
-                </a>
-				
-				<!-- Portfolio item 02 -->
-
-				<a href="https://taxeaseci.humaizakbar610.repl.co/" class="portfolio__item">
-                    <img src="img/TE.png" alt="" class="portfolio__img">
-                </a>
-				
-                
-                <!-- Portfolio item 03 -->
-                <!-- not working as of yet
-		<a href="MotionDetector.html" class="portfolio__item">
-                    <img src="img/MotionDetector.png" alt="" class="portfolio__img">
-                </a>!-->
-                
-                <!-- Portfolio item 04 -->
-                <!--<a href="PasswordGenerator.html" class="portfolio__item">
-                    <img src="img/PasswordGenerator.png" alt="" class="portfolio__img">
-                </a>!-->
-                
-                <!-- Portfolio item 05 -->
-                <a href="TodoList/" class="portfolio__item">
-                    <img src="img/the-pros-and-cons-of-paper-to-do-list.jpeg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
+        <!-- FAQ Section -->
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">What is off-channel communication?</button>
+                <div class="faq-answer">
+                    Off-channel communication refers to communication that occurs outside the normal or approved channels, such as personal email, messaging apps, or unapproved platforms.
+                </div>
             </div>
+            <div class="faq-item">
+                <button class="faq-question">Why is off-channel communication a security risk?</button>
+                <div class="faq-answer">
+                    Off-channel communication can lead to security risks like data breaches, unauthorized access to sensitive information, and lack of proper monitoring.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can off-channel communication be detected?</button>
+                <div class="faq-answer">
+                    Detection methods include monitoring network traffic, implementing DLP (Data Loss Prevention) solutions, and using tools designed to detect unauthorized communication.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What are best practices to prevent off-channel communication?</button>
+                <div class="faq-answer">
+                    Best practices include enforcing communication policies, educating employees, using secure communication tools, and monitoring for unauthorized activities.
+                </div>
+            </div>
+        </div>
 
-
-		</section>
-
-		<!-- Footer -->
-		<footer class="footer">
-			<a href="mailto:humaizakbar610@gmail.com" class="footer-link">humaizakbar610@gmail.com</a>
-			<ul class ="social-list">
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://instagram.com/humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-				<!-- tiktok
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://tiktok.com/@humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-tiktok"></i>
-					</a>
-				</li> -->
-				<!-- twitter
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li> -->
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-github"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</li>
-			</ul>
-		</footer>
-
-		<script src="js/index.js"></script>
-
-	</body>
+        <!-- Clickable Section -->
+        <button id="toggleSection" class="section-toggle">Off-Channel vs On-Channel Communication Modes</button>
+        
+        <!-- Off-Channel vs On-Channel Section -->
+        <div id="listSection" class="hidden-section">
+            <div class="list-section">
+                <div class="list-item">
+                    <h2>Off-Channel Communication</h2>
+                    <ul>
+                        <li>Personal Email</li>
+                        <li>WhatsApp</li>
+                        <li>Signal</li>
+                        <li>Facebook Messenger</li>
+                        <li>Private Discord Channels</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <h2>On-Channel Communication</h2>
+                    <ul>
+                        <li>Corporate Email</li>
+                        <li>Microsoft Teams</li>
+                        <li>Slack (Monitored Channels)</li>
+                        <li>Zoom (Official Corporate Account)</li>
+                        <li>Salesforce Chatter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
