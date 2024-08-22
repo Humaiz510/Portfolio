@@ -30,7 +30,7 @@ input[type="text"] {
 }
 
 .faq-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -44,12 +44,12 @@ input[type="text"] {
     text-align: center;
     cursor: pointer;
     outline: none;
-    border-radius: 25px;
+    border-radius: 50px; /* Rounded buttons */
     transition: background-color 0.3s ease;
 }
 
 .faq-answer {
-    padding: 15px;
+    padding: 20px;
     display: none;
     font-size: 16px;
     background-color: #f9f9f9;
@@ -59,22 +59,24 @@ input[type="text"] {
 
 /* Red Button for Regular FAQ */
 .red-btn {
-    background-color: #ff4b4b;
+    background-color: #f44336;
     color: white;
+    border-radius: 50px;
 }
 
 .red-btn:hover {
-    background-color: #e03c3c;
+    background-color: #d32f2f;
 }
 
 /* Yellow Button for Off-Channel vs On-Channel Section */
 .yellow-btn {
     background-color: #ffc107;
     color: black;
+    border-radius: 50px;
 }
 
 .yellow-btn:hover {
-    background-color: #e0a400;
+    background-color: #ffb300;
 }
 
 .faq-item.active .faq-answer {
@@ -84,32 +86,35 @@ input[type="text"] {
 .list-section {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .list-item {
-    width: 45%;
-    background-color: #fff;
-    padding: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
 }
 
 .list-item h3 {
-    background-color: #ff4b4b;
+    background-color: #f44336;
     color: white;
     padding: 10px;
     border-radius: 12px;
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 0;
+    list-style-type: none;
+    padding: 0;
     text-align: left;
 }
 
 ul li {
-    margin-bottom: 10px;
+    background: #ffe0b2;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    text-align: left;
     font-size: 16px;
-    list-style-position: inside;
 }
