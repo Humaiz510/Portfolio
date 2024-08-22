@@ -30,27 +30,22 @@ input[type="text"] {
 }
 
 .faq-item {
-    background-color: #fff;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .faq-question {
     width: 100%;
     padding: 15px;
     font-size: 18px;
-    background-color: #333;
-    color: #fff;
     border: none;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     outline: none;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-    background-color: #555;
 }
 
 .faq-answer {
@@ -59,6 +54,27 @@ input[type="text"] {
     font-size: 16px;
     background-color: #f9f9f9;
     border-top: 1px solid #eee;
+    text-align: center;
+}
+
+/* Red Button for Regular FAQ */
+.red-btn {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+.red-btn:hover {
+    background-color: #e03c3c;
+}
+
+/* Yellow Button for Off-Channel vs On-Channel Section */
+.yellow-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.yellow-btn:hover {
+    background-color: #e0a400;
 }
 
 .faq-item.active .faq-answer {
@@ -67,20 +83,33 @@ input[type="text"] {
 
 .list-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 15px;
 }
 
 .list-item {
-    width: 48%;
+    width: 45%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-item h3 {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 ul {
     list-style-type: square;
-    padding-left: 20px;
+    padding-left: 0;
+    text-align: left;
 }
 
 ul li {
     margin-bottom: 10px;
     font-size: 16px;
+    list-style-position: inside;
 }
