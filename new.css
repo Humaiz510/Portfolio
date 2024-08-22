@@ -27,18 +27,38 @@ body {
     margin-right: 20px; /* Adds space between logo and search bar */
 }
 
+/* Search bar container */
 .ribbon .search-bar {
-    flex-grow: 0; /* Prevents the search bar from growing */
-    width: 300px; /* Set a fixed width for the search bar */
+    position: relative;
+    width: 300px; /* Set the total width of the search bar and button */
+    display: flex;
 }
 
+/* Input field inside the search bar */
 .ribbon input[type="text"] {
-    width: 100%;
+    width: 90%; /* Take 90% of the width */
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px; /* Rounded corners, left side */
     outline: none;
+}
+
+/* Search button */
+.ribbon .search-btn {
+    width: 10%; /* Take up 10% of the search bar width */
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Rounded corners, right side */
+    transition: background-color 0.3s ease;
+}
+
+/* Change button background when the input field is focused */
+.ribbon input[type="text"]:focus + .search-btn {
+    background-color: black; /* Change background to black when typing */
 }
 
 /* Add padding to the body to prevent content from being hidden under the ribbon */
