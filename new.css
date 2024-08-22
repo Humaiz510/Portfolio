@@ -70,6 +70,7 @@ input[type="text"] {
     cursor: pointer;
     outline: none;
     border-radius: 50px; /* Rounded buttons */
+    background-color: #ffc107; /* Default yellow */
     transition: background-color 0.3s ease;
 }
 
@@ -80,28 +81,6 @@ input[type="text"] {
     background-color: #f9f9f9;
     border-top: 1px solid #eee;
     text-align: center;
-}
-
-/* Red Button for Regular FAQ */
-.red-btn {
-    background-color: #f44336;
-    color: white;
-    border-radius: 50px;
-}
-
-.red-btn:hover {
-    background-color: #d32f2f;
-}
-
-/* Yellow Button for Off-Channel vs On-Channel Section */
-.yellow-btn {
-    background-color: #ffc107;
-    color: black;
-    border-radius: 50px;
-}
-
-.yellow-btn:hover {
-    background-color: #ffb300;
 }
 
 .faq-item.active .faq-answer {
@@ -123,7 +102,7 @@ input[type="text"] {
 }
 
 .list-item h3 {
-    background-color: #f44336;
+    background-color: #ff9800;  /* Orange for the section headers */
     color: white;
     padding: 10px;
     border-radius: 12px;
