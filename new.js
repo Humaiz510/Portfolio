@@ -21,3 +21,9 @@ function searchFAQ() {
         }
     });
 }
+
+// Toggle section visibility when "Off-Channel vs On-Channel Communication Modes" is clicked
+document.getElementById('toggleSection').addEventListener('click', function() {
+    const listSection = document.getElementById('listSection');
+    listSection.style.display = listSection.style.display === 'block' ? 'none' : 'block';
+});
