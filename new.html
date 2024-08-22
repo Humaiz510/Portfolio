@@ -1,79 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Off-Channel Communications FAQ</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
-    <!-- Ribbon Section with Logo -->
+    <!-- Ribbon Section with Logo and Search Bar -->
     <div class="ribbon">
         <img src="logo.png" alt="Logo" class="logo">
+        <!-- Search bar inside the ribbon -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" onkeyup="searchFAQ()" placeholder="Search for a question...">
+        </div>
     </div>
 
     <div class="container">
         <h1>Off-Channel Communications FAQ</h1>
-
-        <!-- Search input for FAQ -->
-        <input type="text" id="searchInput" onkeyup="searchFAQ()" placeholder="Search for a question...">
-
+        
         <!-- FAQ Section -->
         <div class="faq">
-            <div class="faq-item">
-                <button class="faq-question">What is off-channel communication?</button>
-                <div class="faq-answer">
-                    Off-channel communication refers to communication that occurs outside the normal or approved channels, such as personal email, messaging apps, or unapproved platforms.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Why is off-channel communication a security risk?</button>
-                <div class="faq-answer">
-                    Off-channel communication can lead to security risks like data breaches, unauthorized access to sensitive information, and lack of proper monitoring.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">How can off-channel communication be detected?</button>
-                <div class="faq-answer">
-                    Detection methods include monitoring network traffic, implementing DLP (Data Loss Prevention) solutions, and using tools designed to detect unauthorized communication.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">What are best practices to prevent off-channel communication?</button>
-                <div class="faq-answer">
-                    Best practices include enforcing communication policies, educating employees, using secure communication tools, and monitoring for unauthorized activities.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Off-Channel vs On-Channel Communication Modes</button>
-                <div class="faq-answer">
-                    <div class="list-section">
-                        <div class="list-item">
-                            <h3>Off-Channel Communication</h3>
-                            <ul>
-                                <li>Personal Email</li>
-                                <li>WhatsApp</li>
-                                <li>Signal</li>
-                                <li>Facebook Messenger</li>
-                                <li>Private Discord Channels</li>
-                            </ul>
-                        </div>
-                        <div class="list-item">
-                            <h3>On-Channel Communication</h3>
-                            <ul>
-                                <li>Corporate Email</li>
-                                <li>Microsoft Teams</li>
-                                <li>Slack (Monitored Channels)</li>
-                                <li>Zoom (Official Corporate Account)</li>
-                                <li>Salesforce Chatter</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- FAQ items go here -->
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
