@@ -87,6 +87,7 @@ strong { font-weight: var(--fw-bold) }
 
 /* Buttons */
 .Paragraph-Flex {
+    display: Flex;
     color: #ffffff;
     text-align: center;
     margin: auto;
