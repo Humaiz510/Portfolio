@@ -354,7 +354,12 @@ header {
 .section__pcolor{
     color: #ffffff;
 }
-.section__subtitle--services{
+
+.section__newcolor{
+    text-align: center;
+}
+
+.section_subtitle--services{
     color: #ffffff;
     position: relative;
 }
