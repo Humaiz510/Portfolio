@@ -87,11 +87,14 @@ strong { font-weight: var(--fw-bold) }
 
 /* Buttons */
 .Paragraph-Flex {
-    display: Flex;
     color: #ffffff;
     text-align: center;
     margin: auto;
     width: 50%;
+}
+
+.Paragraph-Flex a {
+    color: #ffffff;
 }
 .btn {
     display: inline-block;
@@ -354,8 +357,7 @@ header {
 .section__pcolor{
     color: #ffffff;
 }
-
-.section_subtitle--services{
+.section__subtitle--services{
     color: #ffffff;
     position: relative;
 }
