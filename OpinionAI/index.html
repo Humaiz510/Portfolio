@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humaiz Akbar | OpinionAI</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="opinionai-styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:,">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="project-hero">
+            <div class="container">
+                <h1>OpinionAI</h1>
+                <p class="project-tagline">AI-powered debate generation and sentiment analysis</p>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>OpinionAI is an innovative AI-powered tool that generates dynamic conversational debates and analyzes the sentiment behind them. Built for CodeFest 25 in collaboration with Asjad, Hanzala Nadeem, and Uqba Nadeem, OpinionAI brings discussions to life while uncovering the emotions within the text.</p>
+                    
+                    <p><strong>AI Integration:</strong> We leveraged Claude AI through sophisticated prompt engineering techniques to generate balanced, nuanced debates on complex topics. Our approach focused on crafting precise prompts that would elicit comprehensive, multi-perspective responses while maintaining neutrality.</p>
+                    
+                    <div class="project-image-full">
+                        <img src="../img/opinion.png" alt="OpinionAI Logo">
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Debate Generation</h3>
+                            <p>Input any topic, and OpinionAI crafts a lively, back-and-forth debate featuring diverse perspectives.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Sentiment Analysis</h3>
+                            <p>Analyzes the emotional tone of topics—whether positive, negative, or neutral—based on social media sentiment.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI Integration</h3>
+                            <p>Leverages advanced natural language processing to create realistic, nuanced conversations on complex topics.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Social Media Insights</h3>
+                            <p>Provides insights into how topics are perceived across social media platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technology Stack</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-name">Python</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">Natural Language Processing</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">Machine Learning</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">Web Development</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Implementation</h2>
+                    <p>OpinionAI combines two powerful features to create a one-of-a-kind experience. The backend is built with Python, utilizing advanced NLP techniques to generate debates and analyze sentiment.</p>
+                    
+                    <h3>Prompt Engineering</h3>
+                    <p>A critical aspect of our implementation was the development of sophisticated prompt engineering techniques for Claude AI. We designed a multi-stage prompting system that:</p>
+                    <ul class="feature-list">
+                        <li>Establishes clear debate parameters to ensure balanced representation</li>
+                        <li>Structures prompts to generate coherent, logical arguments from multiple perspectives</li>
+                        <li>Implements context-aware follow-up prompts that maintain conversation continuity</li>
+                        <li>Uses carefully crafted system prompts to maintain neutrality and factual accuracy</li>
+                    </ul>
+                    
+                    <div class="code-block">
+                        <pre><code># Example of sentiment analysis implementation
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+def analyze_sentiment(text):
+    sia = SentimentIntensityAnalyzer()
+    sentiment_score = sia.polarity_scores(text)
+    
+    if sentiment_score['compound'] >= 0.05:
+        return "Positive", sentiment_score
+    elif sentiment_score['compound'] <= -0.05:
+        return "Negative", sentiment_score
+    else:
+        return "Neutral", sentiment_score
+        
+# Example usage
+topic = "Climate Change"
+debate_text = generate_debate(topic)  # Function to generate debate
+sentiment, scores = analyze_sentiment(debate_text)
+
+print(f"The sentiment on {topic} is: {sentiment}")
+print(f"Sentiment scores: {scores}")</code></pre>
+                    </div>
+                    
+                    <p>The debate generation component uses Claude AI with our custom prompt engineering approach to create realistic conversations that present multiple viewpoints on a given topic.</p>
+                    
+                    <div class="code-block">
+                        <pre><code># Example of prompt engineering for Claude AI
+def create_debate_prompt(topic, perspective_a=None, perspective_b=None):
+    """
+    Create a structured prompt for Claude AI to generate debate content
+    with balanced perspectives.
+    """
+    system_prompt = """You are a neutral debate moderator. Your role is to present 
+    balanced arguments from multiple perspectives on controversial topics. 
+    Ensure factual accuracy and fair representation of all viewpoints."""
+    
+    if perspective_a is None and perspective_b is None:
+        # Initial prompt to start debate
+        user_prompt = f"""Generate a balanced debate on the topic: {topic}
+        
+        Present two distinct perspectives (A and B) with thoughtful, nuanced arguments.
+        Each perspective should:
+        - Present clear reasoning
+        - Use factual evidence where appropriate
+        - Acknowledge complexity
+        - Avoid strawman arguments
+        
+        Format as:
+        Perspective A: [argument]
+        Perspective B: [argument]"""
+    else:
+        # Follow-up prompt for continuing debate
+        user_prompt = f"""Continue the debate on {topic}.
+        
+        Previous arguments:
+        Perspective A: {perspective_a}
+        Perspective B: {perspective_b}
+        
+        Generate the next exchange, with each perspective responding to the other's points.
+        Maintain logical consistency with previous arguments while introducing new supporting points."""
+    
+    return system_prompt, user_prompt</code></pre>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge-item">
+                        <h3>Balanced Perspectives</h3>
+                        <p>Creating balanced, fair representations of different viewpoints was challenging. We implemented a perspective-neutral approach that focuses on presenting arguments without inherent bias, allowing users to form their own opinions.</p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h3>Sentiment Accuracy</h3>
+                        <p>Accurately determining sentiment across diverse topics required sophisticated analysis. We combined multiple sentiment analysis techniques and trained our models on diverse datasets to improve accuracy across different domains and contexts.</p>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul class="feature-list">
+                        <li>Integration with real-time social media data for up-to-date sentiment analysis</li>
+                        <li>Multi-language support for global topic analysis</li>
+                        <li>Interactive debate feature allowing users to participate in AI-generated discussions</li>
+                        <li>Topic recommendation system based on trending discussions</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Asjad4449/OpinionAI/tree/main" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <p>Feel free to reach out to me for collaborations or opportunities.</p>
+                    <a href="mailto:humaizakbar610@gmail.com" class="contact-email">humaizakbar610@gmail.com</a>
+                    <div class="social-links">
+                        <a href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="../Resume/index.html" rel="noopener noreferrer">
+                            <i class="fa fa-file"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Humaiz Akbar. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html> 

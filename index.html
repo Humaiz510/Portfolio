@@ -3,180 +3,132 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Humaiz Akbar's Portfolio Website</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awsome/5.11.2/css/all.css"
-		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVk/Kvc=" crossorigin="anonymous"/>
-
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" href="css/style.css">
-
-		<script src="https://kit.fontawesome.com/78577e345e.js" crossorigin="anonymous"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-
+		<title>Humaiz Akbar | Portfolio</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="data:,">
 	</head>
 
 	<body>
 		<header>
-			<div class="logo">
-				<a href="index.html" class="portfolio__item">
-				<!---<img src="img/circleGif.gif" class="portfolio__img" alt=""></a>-->
-				<img src="img/PortfolioLogo.png" class="portfolio__img" alt=""></a>
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div class="circle">
-				
-			</div>
-			<!--<button class="nav-toggle" aria-label="toggle navigation">
-				<span class="hamburger"></span>
-			</button>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-					<li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-				</ul>
-			</nav>!-->
 		</header>
 
-		<!-- Introduction -->
-		<section class="intro" id="home">
-			<h1 class="section__title section__title--intro">
-				Hi, I am <strong>Humaiz Akbar</strong>
-			</h1>
-			<p class="section__subtitle section__subtitle--intro">Developer</p>
-			<img src="MeSmiling.png" alt="a picture of humaiz akbar" class="intro__img">
-		</section>
-
-		<!-- My services -->
-		<!--<section class="my-services" id="services">
-			<h2 class="section__title section__title--services">What I do</h2>
-			<div class="services">
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p></p>
-                </div>  / service
-				
-                <div class="service">
-                    <h3>    </h3>
-                    <p>     </p>
-                </div>  / service
-				
-                <div class="service">
-                    <h3>Mobile App Development</h3>
-                    <p></p>
-                </div>  / service !-->
-                
-            </div> <!-- / services -->
-<!--
-			<a href="#work" class="btn">My work</a>
-		</section>-->
-		<!-- About Me -->
-		<seciton class="about-me" id="about">
-			<h2 class="section__title section__title--about">Who I am</h2>
-			<p class ="section__subtitle section__subtitle--about">Software Engineer Based Out Of PA</p>
-
-			<div class="about-me__body" id="test">
-				<p class='Paragraph-Flex section__pcolor'>I am a Software Engineering major studying at Drexel University in Philadelphia, PA.<br></p>
-				<p class='Paragraph-Flex'><a href="/Resume">Link to my Resume</a></p>
-				<p> </p><p> </p><p></p>
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Hi, I am <span>Humaiz Akbar</span></h1>
+					<p>Software Engineer</p>
+					<div class="hero-cta">
+						<a href="#projects" class="btn btn-primary">View My Work</a>
+						<a href="#contact" class="btn btn-secondary">Contact Me</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img src="img/MeSmiling.png" alt="Humaiz Akbar">
+				</div>
 			</div>
-
-			<!--<img src="" alt=" " class = "about-me__img">!-->
-		</seciton>
-
-		<!-- My Work -->
-		<section class="my-services" id="work">
-			<h2 class="section__title section__title--services">My work</h2>
-			<!--<p class="section__subtitle section__subtitle--services section__pcolor">A selection of my range of work</p>!-->
-
-			
-			<div class="portfolio" id="portfolioItems">
-                <!-- Portfolio item 01 -->
-				<a href="DiscordBot" class="portfolio__item">
-                    <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="" class="portfolio__img">
-                </a>
-				
-				<!-- Portfolio item 02 -->
-
-				<a href="https://taxeaseci.humaizakbar610.repl.co/" class="portfolio__item">
-                    <img src="img/TE.png" alt="" class="portfolio__img">
-                </a>
-				
-                
-                <!-- Portfolio item 03 -->
-                <!-- not working as of yet
-		<a href="MotionDetector.html" class="portfolio__item">
-                    <img src="img/MotionDetector.png" alt="" class="portfolio__img">
-                </a>!-->
-                
-                <!-- Portfolio item 04 -->
-                <!--<a href="PasswordGenerator.html" class="portfolio__item">
-                    <img src="img/PasswordGenerator.png" alt="" class="portfolio__img">
-                </a>!-->
-                
-                <!-- Portfolio item 05 -->
-                <a href="TodoList" class="portfolio__item">
-                    <img src="img/the-pros-and-cons-of-paper-to-do-list.jpeg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
-                </a>
-            </div>
-
-
 		</section>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<a href="mailto:humaizakbar610@gmail.com" class="footer-link">humaizakbar610@gmail.com</a>
-			<ul class ="social-list">
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-github"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="/Resume" target="_blank" rel="noopener noreferrer">
-						<i class="fa fa-file"></i>
-					</a>
-				</li>
-			</ul>
+		<section id="about" class="about">
+			<div class="container">
+				<h2>About Me</h2>
+				<div class="about-content">
+					<div class="about-text">
+						<p>I am a Software Engineering major studying at Drexel University in Philadelphia, PA.</p>
+						<p>Based in Pennsylvania, I focus on creating clean, efficient solutions to complex problems.</p>
+						<a href="Resume/index.html" class="btn btn-outline">View My Resume</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="projects-grid">
+					<!-- OpinionAI Project -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src="img/opinion.png" alt="OpinionAI">
+						</div>
+						<div class="project-info">
+							<h3>OpinionAI</h3>
+							<p>An AI-powered tool that generates debates and analyzes sentiment in text.</p>
+							<div class="project-links">
+								<a href="OpinionAI" class="btn btn-sm">View Project</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- GestureBridge Project -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src="img/original.png" alt="GestureBridge: ASL Translate">
+						</div>
+						<div class="project-info">
+							<h3>GestureBridge: ASL Translate</h3>
+							<p>An AI system that translates American Sign Language into text in real-time.</p>
+							<div class="project-links">
+								<a href="https://devpost.com/software/gesturebridge-asl-translate" class="btn btn-sm" target="_blank">View Project</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Discord Bot Project -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="Discord Bot">
+						</div>
+						<div class="project-info">
+							<h3>Discord Bot</h3>
+							<p>A custom Discord bot with various functionalities.</p>
+							<div class="project-links">
+								<a href="DiscordBot" class="btn btn-sm">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2>Get In Touch</h2>
+				<div class="contact-content">
+					<p>Feel free to reach out to me for collaborations or opportunities.</p>
+					<a href="mailto:humaizakbar610@gmail.com" class="contact-email">humaizakbar610@gmail.com</a>
+					<div class="social-links">
+						<a href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="Resume/index.html" rel="noopener noreferrer">
+							<i class="fa fa-file"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2025 Humaiz Akbar. All rights reserved.</p>
+			</div>
 		</footer>
 
-		<script src="js/index.js"></script>
-
+		<script src="js/script.js"></script>
 	</body>
 </html>

@@ -1,4 +1,175 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humaiz Akbar | Resume</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="resume-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+</head>
 <body>
-    <embed src="resume.pdf" width=100% height=1000px type="application/pdf">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" onclick="console.log('Home clicked');">Home</a></li>
+                    <li><a href="../index.html#about" onclick="console.log('About clicked');">About</a></li>
+                    <li><a href="../index.html#projects" onclick="console.log('Projects clicked');">Projects</a></li>
+                    <li><a href="#contact" onclick="console.log('Contact clicked');">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="resume-hero">
+        <div class="container">
+            <h1>Resume</h1>
+            <div class="resume-download">
+                <a href="resume.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-content">
+        <div class="container">
+            <!-- Education Section -->
+            <div class="resume-section">
+                <h2>Education</h2>
+                <div class="resume-item">
+                    <h3>Bachelor of Science in Software Engineering</h3>
+                    <p class="resume-place">Drexel University, Philadelphia, PA</p>
+                    <p class="resume-date">Anticipated Graduation: June 2025</p>
+                    <ul>
+                        <li>Minor in Data Science</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="resume-section">
+                <h2>Work Experience</h2>
+                
+                <div class="resume-item">
+                    <h3>QA Engineer</h3>
+                    <p class="resume-place">FS Investments - Data Engineering, Philadelphia, PA</p>
+                    <p class="resume-date">Apr. 2024 – Present</p>
+                    <ul>
+                        <li>Automated the discovery of AWS resources related to a lambda function by analyzing API calls in CloudTrail (e.g., S3, AppFlow, DynamoDB) and consolidated the resources into applications.</li>
+                        <li>Developed Python program to compare AWS 'applications' across different environments, identifying missing resources. Deployed CloudFormation templates to environments with missing resources to ensure consistency.</li>
+                        <li>Planned and executed the integration of regression tests with AWS Inspector to automate identifying security vulnerabilities and performance issues in AWS Lambda functions, ensuring reliability across environments.</li>
+                        <li>Utilized the Testim tool from Tricentis to create and automate Salesforce workflows, ensuring functionality and stability across environments post updates.</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h3>Software Developer</h3>
+                    <p class="resume-place">Comcast - XLabs, Philadelphia, PA</p>
+                    <p class="resume-date">Mar. 2023 – Sep. 2023</p>
+                    <ul>
+                        <li>Developed features for web and mobile applications integrating CRUD operations to streamline user interactions.</li>
+                        <li>Crafted and optimized SQL queries for efficient data retrieval, supporting the functionality of the developed features.</li>
+                        <li>Effectively utilized version control using GitHub to enhance team collaboration and streamline the resolution of complex development tickets.</li>
+                        <li>Created comprehensive documentation for all features in the web and mobile application, ensuring clear and concise instructions for users.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Technical Projects Section -->
+            <div class="resume-section">
+                <h2>Technical Projects</h2>
+                
+                <div class="resume-item">
+                    <h3>Automated Capture of Corporate Actions</h3>
+                    <ul>
+                        <li>Designed a serverless workflow using AWS services (S3, Lambda, Textract, SageMaker, DynamoDB) to process and extract data from unstructured tender offers.</li>
+                        <li>Created an NLP model in Amazon SageMaker to accurately extract structured data fields from financial documents.</li>
+                        <li>Utilized AWS EventBridge and Lambda for cost-effective, event-driven document processing.</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h3>Hand Gesture Recognition via Computer Vision</h3>
+                    <ul>
+                        <li>Facilitated a team to develop an American Sign Language model using Media Pipe, TensorFlow, and OpenCV.</li>
+                        <li>Developed an AI system that leveraged hand gesture recognition to accurately translate ASL into text.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Technical Proficiencies Section -->
+            <div class="resume-section">
+                <h2>Technical Proficiencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Bash</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>NumPy</li>
+                            <li>Flask</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>AWS SDK</li>
+                            <li>Git</li>
+                            <li>SQLite</li>
+                            <li>Azure DevOps</li>
+                            <li>Databricks</li>
+                            <li>GitHub Actions</li>
+                            <li>Tricentis Testim</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out to me for collaborations or opportunities.</p>
+                <a href="mailto:humaizakbar610@gmail.com" class="contact-email">humaizakbar610@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="../Resume/index.html" rel="noopener noreferrer">
+                        <i class="fa fa-file"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Humaiz Akbar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
+</html>

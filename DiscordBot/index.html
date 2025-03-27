@@ -3,93 +3,241 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Humaiz Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awsome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVk/Kvc=" crossorigin="anonymous"/>
-
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="../css/style.css">
-
-        <script src="https://kit.fontawesome.com/78577e345e.js" crossorigin="anonymous"></script>
+        <title>Humaiz Akbar | Discord Bot</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="discord-styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:,">
     </head>
 
     <body>
         <header>
-			<div class="logo">
-				<a href="../index.html" class="portfolio__item">
-				<img src="../img/PortfolioLogo.png" class="portfolio__img" alt=""></a>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                The <strong>Discord Bot</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">By Humaiz Akbar</p>
-            <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="" class="intro__img">
+        <section class="project-hero">
+            <div class="container">
+                <h1>Discord Bot</h1>
+                <p class="project-tagline">A custom Discord bot with music playback and moderation features</p>
+            </div>
         </section>
-        	
-		<div class="container">
-			<h2>Click the link below to add the Discord bot to your server</h2>
-			<a href="https://discord.com/api/oauth2/authorize?client_id=926312160215334912&permissions=274878003200&redirect_uri=https%3A%2F%2Fdiscord.com%2Fapp&response_type=code&scope=identify%20bot%20messages.read" class="exe_link">Discord Bot</a>
-		</div>
-        
-        <div class="portfolio-item-individual">
-        	<p class="pcolor">Core allows you to do some important tasks in discord like translation and playing music that otherwise you would have to do in a browser or another application.</p>
-        </div>
-		<div class="portfolio-item-individual">
-			<p class="pcolor">Watch the following videos that go through the setup and and functionality of the bot:</p>
-			<video width="400" height="240" controls>
-				<source src="../Videos/add.mp4" type="video/mp4">
-				<source src="../Videos/add.mp4" type="video/ogg">
-				Your browser does not support the video tag.
-			</video>
-		<video width="400" height="240" controls>
-			<source src="../Videos/aDiscord Bot Walkthroughs.mp4" type="video/mp4">
-			<source src="../Videos/aDiscord Bot Walkthroughs.ogg" type="video/ogg">
-			Your browser does not support the video tag.
-		</video>
-		</div>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-			<a href="mailto:humaizakbar610@gmail.com" class="footer-link">humaizakbar610@gmail.com</a>
-			<ul class ="social-list">
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://instagram.com/humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-				<!-- tiktok
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://tiktok.com/@humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-tiktok"></i>
-					</a>
-				</li> -->
-				<!-- twitter
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li> -->
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-github"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</li>
-			</ul>
-		</footer>
 
-        <script src="../js/index.js"></script>
-        
+        <section class="project-content">
+            <div class="container">
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>This Discord bot, named "Core", was developed to enhance server management and user interaction. It provides a range of features including music playback, moderation tools, and fun commands that make Discord server management easier and more engaging.</p>
+                    
+                    <div class="project-image-full">
+                        <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="Discord Bot">
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Music Player</h3>
+                            <p>Play music from YouTube directly in voice channels with commands for playback control and queue management.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>Translation</h3>
+                            <p>Translate text between different languages using Google's translation API.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-broom"></i>
+                            </div>
+                            <h3>Moderation</h3>
+                            <p>Clear chat messages and manage server content with simple commands.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <h3>Fun Commands</h3>
+                            <p>Engage users with fun commands like coin toss and other interactive features.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technology Stack</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-name">Python</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">Discord.py</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">YouTube-DL</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <span class="tech-name">Flask</span>
+                            <div class="tech-bar">
+                                <div class="tech-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Implementation</h2>
+                    <p>The bot is built using Discord.py, a powerful Python library for interacting with the Discord API. It uses a command handler system with the prefix '#' to organize and manage different commands.</p>
+                    
+                    <div class="code-block">
+                        <pre><code>@bot.command()
+async def play(ctx,url):
+  if ctx.author.voice is None:
+    await ctx.send("Join a vc to use the bot.")
+
+  elif len(url) == 0:
+      return await ctx.send("You need to include a url")
+
+  elif ctx.voice_client is None:
+    voice_channel = ctx.author.voice.channel
+    await voice_channel.connect()
+    await ctx.send("Playing {}".format(url))
+    if not ctx.message.author.voice:
+      await ctx.send("You have to be connected to a voice channel")
+      return
+    else:
+      channel = ctx.message.author.voice.channel
+
+    ffmpeg_options = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
+    ydl_options = {'format': "bestaudio"}
+    vc = ctx.voice_client
+
+    with youtube_dl.YoutubeDL(ydl_options) as ydl:
+      info = ydl.extract_info(url, download = False)
+      url2 = info['formats'][0]['url']
+      source = await discord.FFmpegOpusAudio.from_probe(url2, **ffmpeg_options)
+    vc.play(source)</code></pre>
+                    </div>
+                    
+                    <p>The bot includes a status cycling feature that alternates between different status messages, and uses Flask to create a simple web server to keep the bot alive when hosted on platforms like Replit.</p>
+                    
+                    <div class="code-block">
+                        <pre><code>status = itertools.cycle(['I am Core','Core'])
+
+@bot.event
+async def on_ready():
+  change_status.start()
+  print("Your bot is ready")
+
+@tasks.loop(seconds=10)
+async def change_status():
+  await bot.change_presence(activity=discord.Game(next(status)))</code></pre>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Key Commands</h2>
+                    <div class="challenge-item">
+                        <h3>Music Commands</h3>
+                        <ul class="feature-list">
+                            <li><code>#play [url]</code> - Play music from a YouTube URL</li>
+                            <li><code>#queue [song]</code> - Add a song to the queue</li>
+                            <li><code>#leave</code> - Disconnect the bot from voice channel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h3>Utility Commands</h3>
+                        <ul class="feature-list">
+                            <li><code>#tr [language] [text]</code> - Translate text to specified language</li>
+                            <li><code>#clear [amount]</code> - Clear specified number of messages</li>
+                            <li><code>#man</code> - Display manual with all commands</li>
+                            <li><code>#toss</code> - Flip a coin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge-item">
+                        <h3>Music Streaming</h3>
+                        <p>Implementing reliable music streaming from YouTube required handling various edge cases like disconnections and format changes. I used FFmpeg with specific options to ensure reliable reconnection and optimal audio quality.</p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h3>Bot Hosting</h3>
+                        <p>Keeping the bot running 24/7 was a challenge. I implemented a Flask web server with a keep-alive function to prevent the bot from going idle when hosted on platforms like Replit.</p>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul class="feature-list">
+                        <li>Spotify integration for expanded music options</li>
+                        <li>Advanced moderation features like auto-moderation and warning systems</li>
+                        <li>Custom server settings and configuration options</li>
+                        <li>Integration with more external APIs for expanded functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <p>Feel free to reach out to me for collaborations or opportunities.</p>
+                    <a href="mailto:humaizakbar610@gmail.com" class="contact-email">humaizakbar610@gmail.com</a>
+                    <div class="social-links">
+                        <a href="https://github.com/Humaiz510" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/humaiz-akbar-4329141ba/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="../Resume/index.html" rel="noopener noreferrer">
+                            <i class="fa fa-file"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Humaiz Akbar. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="../js/script.js"></script>
     </body>
 </html>
 
